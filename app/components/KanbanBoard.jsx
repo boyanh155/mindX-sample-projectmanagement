@@ -105,7 +105,7 @@ const KanbanBoard = () => {
     parent?.classList?.add("!bg-red-300");
   };
   return (
-    <div className="w-full">
+    <div className="w-full px-2">
       {/* ADD BAR */}
       <div className="flex w-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg p-4">
         <div
@@ -116,14 +116,14 @@ const KanbanBoard = () => {
         </div>
       </div>
       {/* BOARD */}
-      <div className="flex flex-row gap-2 mt-2">
+      <div className="flex flex-row gap-2 mt-2 flex-wrap">
         {myColumns.map((column, index) => {
           return (
             // COLUMN RENDER
             <div
               key={index}
               id={`column-${index}`}
-              className="flex flex-col bg-[#ebe7e7] flex-1 p-3 rounded-lg "
+              className="flex flex-col bg-[#ebe7e7]  flex-1 p-3 rounded-lg xl:w-1/4 xl:basis-1/4 basis-1/2 w-1/2 "
               onDragOver={(e) => dragOverItem(e, index)}
               onDragLeave={(e) => {
                 e.stopPropagation();

@@ -1,11 +1,11 @@
-import KanbanBoard from "@/app/components/KanbanBoard";
+import KanbanBoard from "../../components/KanbanBoard";
 import React from "react";
 
 const ContentPage = () => {
   return (
     <div>
-        {/*  */}
-        {/*  */}
+      {/*  */}
+      {/*  */}
       <KanbanBoard />
     </div>
   );
